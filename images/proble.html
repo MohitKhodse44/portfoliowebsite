@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+let numberOfRows = 5;
+let currentNumber = 1;
+
+for (let i = 1; i <= numberOfRows; i++) {
+    let row = "";
+
+    if (i % 2 === 0) {
+        // For even rows, print numbers in descending order
+        for (let j = currentNumber + i - 1; j >= currentNumber; j--) {
+            row += j + " ";
+        }
+    } else {
+        // For odd rows, print numbers in ascending order
+        for (let j = currentNumber; j < currentNumber + i; j++) {
+            row += j + " ";
+        }
+    }
+
+    console.log(row);
+    currentNumber += i;
+}
+
+
+</script>
+
+    
+</body>
+</html>

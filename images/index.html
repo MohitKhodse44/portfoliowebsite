@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Personal-Site</title>
+    <link rel="stylesheet" href="mohit.css">
+    <script src="https://kit.fontawesome.com/3e017ab75f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><i class="fa-brands fa-pied-piper-alt"></i> Mohit</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" style="color: #000000;" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span> Mohit</span> Khodse</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- About -------------------------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Yellow G.jpeg" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Recent computer engineering graduate with a keen interest in
+                        software development and web development. Eager to join a
+                        collaborative team where I can gain hands-on experience,
+                        enhance my technical skills, and contribute to the design and
+                        implementation of innovative solutions.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skillss')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab " id="skillss">
+                        <ul>
+                            <li><span>Java</span><br>OOPs and Collection Framework</li>
+                            <li><span>Sql</span><br>Sub-query,Joins and Normalization</li>
+
+                            <li><span>Html5</span><br>Form,tables and Semantic tags</li>
+                            <li><span>Css</span><br>Flex model,Grid model</li>
+                            <li><span>Javascript</span><br>Promises,DOM,Object adn Array</li>
+                            <li><span>React</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li>Fresher</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Full Stack Java Developer Course from <span> Qspider Wakad.</span></li>
+                            <li><span>B.E</span> _(2019-23)<br>Computer Science <br> Savitribai Phule Pune University
+                            </li>
+
+                            <li><span>12<sup>th</sup></span>_(2018-19)<br>Dayanand Science College, Latur</li>
+
+                            <li><span>10<sup>th</sup></span>_(2016-17)<br>Shree Shivaji High School, Latur</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------ Services-------------------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div class="div1">
+                        <h1 id="f1">Front-End Developer</h1>
+                        <p id="p1">
+                            Front-end developers design website interfaces using HTML, CSS, and JavaScript for a great
+                            user experience.</p>
+
+                    </div>
+                    <div class="div1">
+                        <h1 id="f2">BackEnd Developer</h1>
+                        <p id="p2"> Build code that allows a database and an application to communicate with one
+                            another.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------------------------portfolio--------------------------------- -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+
+                <div id="workitems">
+                    <div class="work" id="work1">
+                    </div>
+                    <div class="work" id="work2">
+                    </div>
+                    <div class="work" id="work3">
+                    </div>
+                </div>
+                <div class="workinfo">
+                    <div class="workinfo1">
+                        <p id="setiid"> <a href="https://drive.google.com/drive/folders/1fO257zs6VvZGJ_2f-7agS0ZzoEdJaF2K"><i class="fa-solid fa-link"></i> Sentimental Analysis Of IMDB Users Reviews</a></p>
+                    </div>
+                    <div class="workinfo2">
+                        <p id="empid"> <a href="https://drive.google.com/drive/folders/1fO257zs6VvZGJ_2f-7agS0ZzoEdJaF2K"><i class="fa-solid fa-link"></i> Employee Management System</a></p>
+                    </div>
+                    <div class="workinfo3">
+                        <p id="netflixid"> <a href="https://drive.google.com/drive/folders/1fO257zs6VvZGJ_2f-7agS0ZzoEdJaF2K"><i class="fa-solid fa-link"></i> Netflix Clone</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ----------------------contact--------------------------------------- -->
+
+        <div id="contact">
+            <div class="containercontact">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <br>
+                    <p><i class="fa-solid fa-envelope"> </i> mohitkhodse44@gmail.com</p>
+                    <br>
+                    <p><i class="fa-solid fa-phone"></i> (+91) 7875665224</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mohitkhodse44/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohit-khodse-901119230/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MohitKhodse44?tab=repositories" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <br>
+                    <h3 id="downbtn"> <a href="./Mohitkhodse_qspiders_resume 001.pdf" download class="btn00">Download
+                            CV</a></h3>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="email1" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea><br>
+                        <button type="submit" class="submitbtn">Submit</button>
+                    </form>
+                    <br>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @Mohit. Made for proejct purpose only</p>
+            </div>
+        </div>
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tab12 = document.getElementsByClassName("tab-contents")
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tab1 of tab12) {
+                    tab1.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu1 = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu1.style.right = "920px";
+            }
+
+            function closemenu() {
+                sidemenu1.style.right = "-100px";
+            }
+        </script>
+
+
+
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyiujA_GSEdUc4Jf648c95cMKKuKwBYxrcG_yiPSMPPNlf6q8dQrivUCVKCrw8zhK4S/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message Sent successfully."
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 1000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+</body>
+
+</html>
